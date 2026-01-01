@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay Sharma - QA Automation Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: rgba(255,255,255,0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            animation: fadeInDown 1s ease-out;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        section {
+            background: rgba(255,255,255,0.95);
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease-out;
+        }
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #667eea;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #f8f9ff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin: 20px 0;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-bars {
+            animation: slideIn 1.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-100%); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Akshay Sharma</h1>
+            <p>QA Automation Expert | 13+ Years Experience</p>
+            <p>Specializing in Python, Java, Selenium, Appium & DevOps</p>
+        </header>
+
+        <section id="intro">
+            <h2>Profile Summary</h2>
+            <p>Akshay Sharma is a QA Automation expert with 13+ years in software testing, specializing in Python, Java, Selenium, Appium, and DevOps tools like Jenkins and Docker.<sup>[1]</sup> Currently leading at Rocket Software on AI Automation Suite and learning MCP Server with Python.</p>
+        </section>
+
+        <section id="timeline">
+            <h2>Experience Timeline</h2>
+            <p>Akshay has over 13 years in automation testing across Agile and Waterfall models.<sup>[1]</sup> Career spans leadership roles from Product Team Lead at Rocket Software (2024-present) to Senior Software Engineer at Wipro (2012-2017).<sup>[1]</sup>
+            <div class="chart-container">
+                <canvas id="experienceChart"></canvas>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills Overview</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, Java, Groovy<sup>[1]</sup></li>
+                <li><strong>Testing Tools:</strong> Selenium, Appium, Rest Assured, SOAPUI, Jenkins, Docker, AWS<sup>[1]</sup></li>
+                <li><strong>Domains:</strong> Payments (SEPA, SWIFT), APIs, IBMi AS400<sup>[1]</sup></li>
+            </ul>
+        </section>
+
+        <section id="achievements" class="animate-bars">
+            <h2>Key Achievements</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Achievement</th>
+                        <th>Impact/Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Extent Report Utility</td>
+                        <td>1510 downloads, plug-and-play for SOAPUI<sup>[1]</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Tech Talk Speaker</td>
+                        <td>Global Payments, articles in Co-Learn magazine<sup>[1]</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Trainer of the Month</td>
+                        <td>Cybage, best trainee feedback<sup>[1]</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Shining Star Award</td>
+                        <td>Fiserv, Quarter II 2018<sup>[1]</sup></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>Projects Highlights</h2>
+            <ul>
+                <li>Led RDO QA transition and framework development at Rocket Software, streamlining testing and API automation.<sup>[1]</sup></li>
+                <li>End-to-end automation of Tieto Payment Suite (Nordics) at Tietoevry, including Angular upgrades.<sup>[1]</sup></li>
+                <li>Multi-platform framework (Selenium/API) for card payments at Global Payments, integrated with Jenkins.<sup>[1]</sup></li>
+                <li>Data-driven SOAPUI framework with Extent Reports at Fiserv for in-sprint automation.<sup>[1]</sup></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><sup>[1]</sup> Source: AkshaySharma_Resume_12-Years_AutomationTesting.pdf | 
+            <a href="https://www.linkedin.com/in/iamakshayshar" style="color: white;">LinkedIn</a> | 
+            <a href="https://github.com/iamakshayshar" style="color: white;">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Experience Chart with Animation
+        const ctx = document.getElementById('experienceChart').getContext('2d');
+        const experienceChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Wipro (2012-17)', 'Fiserv (2017-19)', 'Cybage (2019-20)', 'Global Payments (2020-21)', 'Tietoevry (2021-24)', 'Rocket (2024-Present)'],
+                datasets: [{
+                    label: 'Years',
+                    data: [4.5, 2, 1, 1, 2.8, 1.5],
+                    backgroundColor: ['#36A2EB', '#FF6384', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'],
+                    borderRadius: 10,
+                    borderSkipped: false,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Years' }
+                    }
+                },
+                plugins: {
+                    title: { display: true, text: 'Career Progression (13+ Years Total)', font: { size: 18 } }
+                },
+                animation: {
+                    delay: 1000,
+                    duration: 2000,
+                    easing: 'easeOutQuart'
+                }
+            }
+        });
+
+        // Intersection Observer for Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 1s ease, transform 1s ease';
+            observer.observe(section);
+        });
+
+        // Smooth scrolling for potential nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
